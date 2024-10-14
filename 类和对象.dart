@@ -1,7 +1,8 @@
 import 'lib/car.dart';
 
 void main(List<String> args) {
-  var me = new Person("张三", 20);
+  // var me = new Person("张三", 20);
+  var me = Person("张三", 20);
   me.getInfo();
   me.setInfo(2);
   me.getInfo();
@@ -83,10 +84,13 @@ class Person {
   // }
 
   // 默认构造函数 只能写一个
-  Person(String name, int age) {
-    this.name = name;
-    this.age = age;
-  }
+  // Person(String name, int age) {
+  //   this.name = name;
+  //   this.age = age;
+  // }
+
+  // 简写形式
+  Person(this.name, this.age);
 
   // 命名构造函数
   Person.custom() {

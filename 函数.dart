@@ -1,5 +1,6 @@
 void main(List<String> args) {
   add(12, 12);
+  print(printPersonInfo("guo", 12));
   print(printPersonInfo2("guo"));
   print(printPersonInfo2("guo", 12));
   print(printPersonInfoMing("guo", age: 12, sex: "女"));
