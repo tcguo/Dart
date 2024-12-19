@@ -69,6 +69,8 @@ void main(List<String> args) {
   c.printB();
 
   var cc = new CC();
+  cc.printAA();
+  cc.printBB();
   print(cc is AA); // true
   print(cc is BB); // true
 }
